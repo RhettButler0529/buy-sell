@@ -1,0 +1,8 @@
+.button-element {
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("Ubuntu-Regular.ttf");
+}
+
+.background {
+  background: url(https://fakhama.network/FNT/Bitcoin-HD-Background.dc7f10c843b25813.jpg)
+    no-repeat;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-size: 100% 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .login {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .login {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .login {
+    max-width: 540px;
+  }
+}
+
+.login {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.window {
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.content {
+  padding: 30px 10px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 0 35px #0000001a;
+  border-radius: 10px;
+}
+
+.logo > img {
+  vertical-align: middle;
+  border-style: none;
+  width: 160px;
+  text-align: center;
+}
+
+.input > h3 {
+  margin: 0 0 25px;
+  font-size: 26px;
+  padding-top: 14px;
+  text-transform: capitalize;
+  padding-bottom: 14px;
+  font-weight: 900;
+  color: #000;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.loginbutton {
+  background-color: #000;
+  cursor: pointer;
+  padding: 10px 50px 8px !important;
+  letter-spacing: 1px !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  height: 45px !important;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  line-height: 0px !important;
+  border-radius: 32px !important;
+  border: 0px !important;
+  border-radius: 32px !important;
+  box-shadow: 0 3px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+  color: #fff;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 145px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5px;
+}
+
+.loginbutton:hover {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.join {
+  margin-bottom: 20px;
+  margin-top: 48px !important;
+}
+
+.join > h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  letter-spacing: 1.9;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.joinbutton {
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+  cursor: pointer;
+  padding: 10px 50px 8px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 500;
+  height: 45px;
+  border-radius: 32px;
+  border: none;
+  color: #fff;
+}
+
+.joinbutton:hover {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.address {
+  background-color: #f0f3ff;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 10px;
+}
+
+.address > p {
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: unset;
+}
+
+.address > span {
+  float: left;
+  font-size: 13px;
+}

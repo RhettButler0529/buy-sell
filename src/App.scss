@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.bg-default {
+  background-color: #0c1a32 !important;
+  padding: 20px 5px 40px 5px;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin tablet {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+.flex-center {
+  @include flex-center();
+}
+
+$measure: (
+  "wd": 75%,
+);
+
+.shadow {
+  @include flex-center();
+  width: map-get($measure, "wd");
+  margin-top: 25px;
+
+  &.bottom {
+    margin: 25px auto;
+    box-shadow: 0px 15px 10px -15px #111;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+.App {
+  height: 100vh;
+  background-color: #0c1a32 !important;
+  color: white !important;
+}

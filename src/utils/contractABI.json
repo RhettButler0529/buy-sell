@@ -1,0 +1,1024 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_dep",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "stateMutability": "payable",
+        "type": "fallback"
+    },
+    {
+        "inputs": [],
+        "name": "IN",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "TotalHoldings",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "endId",
+                "type": "uint256"
+            }
+        ],
+        "name": "archiveROI",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }
+        ],
+        "name": "balanceOf",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "coinRate",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "decimals",
+        "outputs": [
+            {
+                "internalType": "uint8",
+                "name": "",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_address",
+                "type": "address"
+            }
+        ],
+        "name": "doesUserExist",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getCoinRate",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getDirects",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "Id",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "Address",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "SponsorId",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "Business",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "NextRankBusiness",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "Investment",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "RankId",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256[]",
+                                "name": "DirectIds",
+                                "type": "uint256[]"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "ROIDividend",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256[]",
+                                "name": "LevelDividend",
+                                "type": "uint256[]"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "DividendWithdrawn",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "ROIDistributionId_Start",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "ROIDistributionId_Register",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "TransactionCount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct Fakhama.User",
+                        "name": "UserInfo",
+                        "type": "tuple"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "CurrentRankName",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "NextRankName",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "RequiredBusinessForNextRank",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "CoinRate",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "CoinsHolding",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "CurrentRankId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "TotalLevelDividend",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "TotalROIDividend",
+                        "type": "uint256"
+                    }
+                ],
+                "internalType": "struct Fakhama.UserInfo[]",
+                "name": "Directs",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getMemberLevelDividend",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "MemberCount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "Investment",
+                        "type": "uint256"
+                    }
+                ],
+                "internalType": "struct Fakhama.UserLevelInfo[]",
+                "name": "LevelInfo",
+                "type": "tuple[]"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "Percentage",
+                "type": "uint256[]"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "LevelIncome",
+                "type": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "cnt",
+                "type": "uint256"
+            }
+        ],
+        "name": "getMemberROIDividendInfo",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "DistributionId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "OnMemberId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "OnMemberAddress",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "OnAmount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "DistributionAmount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "Rate",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "Type",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "TotalSupply",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "ROIAmount",
+                        "type": "uint256"
+                    }
+                ],
+                "internalType": "struct Fakhama.UserROIDistributionInfo[]",
+                "name": "ROIRecords",
+                "type": "tuple[]"
+            },
+            {
+                "internalType": "uint256",
+                "name": "ArchivedROI",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bool",
+                "name": "IsArchiveNeeded",
+                "type": "bool"
+            },
+            {
+                "internalType": "uint256",
+                "name": "StartId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "RecordsLimit",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getMemberTotalLevelDividend",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_days",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_cnt",
+                "type": "uint256"
+            }
+        ],
+        "name": "getRateHistory",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "Rate",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "Timestamp",
+                        "type": "uint256"
+                    }
+                ],
+                "internalType": "struct Fakhama.CoinRateHistory[]",
+                "name": "history",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getUserBalanceDividend",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getUserInfo",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "Id",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "Address",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "SponsorId",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "Business",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "NextRankBusiness",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "Investment",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "RankId",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256[]",
+                                "name": "DirectIds",
+                                "type": "uint256[]"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "ROIDividend",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256[]",
+                                "name": "LevelDividend",
+                                "type": "uint256[]"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "DividendWithdrawn",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "ROIDistributionId_Start",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "ROIDistributionId_Register",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "TransactionCount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct Fakhama.User",
+                        "name": "UserInfo",
+                        "type": "tuple"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "CurrentRankName",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "NextRankName",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "RequiredBusinessForNextRank",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "CoinRate",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "CoinsHolding",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "CurrentRankId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "TotalLevelDividend",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "TotalROIDividend",
+                        "type": "uint256"
+                    }
+                ],
+                "internalType": "struct Fakhama.UserInfo",
+                "name": "userInfo",
+                "type": "tuple"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getUserRanks",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "Id",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "RankName",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "ReqBusiness",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "UserBusiness",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "Status",
+                        "type": "string"
+                    }
+                ],
+                "internalType": "struct Fakhama.RankInfo[]",
+                "name": "rankInfo",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "endId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getUserTotalROIDividend",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getUserTransactions",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "Amount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "TokenAmount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "Rate",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "Type",
+                        "type": "string"
+                    }
+                ],
+                "internalType": "struct Fakhama.Transaction[]",
+                "name": "transactions",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "SponsorAddress",
+                "type": "address"
+            }
+        ],
+        "name": "invest",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "map_UserIds",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "map_Users",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "Id",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "Address",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "SponsorId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "Business",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "NextRankBusiness",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "Investment",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "RankId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "ROIDividend",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "DividendWithdrawn",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "ROIDistributionId_Start",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "ROIDistributionId_Register",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "TransactionCount",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "map_ranks",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "Id",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "Name",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "Business",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "marketingAddress",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "name",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "newInvestment",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "symbol",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "memberId",
+                "type": "uint256"
+            }
+        ],
+        "name": "tokensToMatic",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "totalSupply",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "newLimit",
+                "type": "uint256"
+            }
+        ],
+        "name": "updateROIRecordsLimit",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "vipCommunity",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "withdrawDividend",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "withdrawHolding",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "stateMutability": "payable",
+        "type": "receive"
+    }
+]

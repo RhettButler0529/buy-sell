@@ -1,0 +1,60 @@
+.buy-sell-container {
+  width: 50%;
+  margin: 10px auto;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  .bold-block {
+    font-weight: bolder;
+    font-size: 13px;
+  }
+  .text-right {
+    text-align: right;
+    margin-right: 10px;
+  }
+  .tab-container {
+    margin: 4px 30px;
+    &-buttons {
+      display: flex;
+      margin: 10px 12px;
+      justify-content: space-between;
+    }
+  }
+  ul {
+    display: flex !important;
+    width: 100%;
+    li {
+      width: 50%;
+      .nav-link {
+        color: black;
+        font-size: 0.9rem;
+        line-height: 2.5;
+        font-weight: bold;
+        width: 100% !important;
+        border-radius: 10px;
+      }
+      .nav-link.active {
+        background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+      }
+    }
+  }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 720px) {
+  .buy-sell-container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .buy-sell-container {
+    width: 100%;
+    .tab-container {
+      margin: 4px 10px;
+    }
+  }
+}

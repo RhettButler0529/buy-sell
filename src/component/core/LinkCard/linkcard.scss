@@ -1,0 +1,44 @@
+.link-card-container {
+  background-color: white;
+  width: 47%;
+  margin: 15px;
+  color: black !important;
+  border-radius: 5px;
+  padding: 10px;
+  .link-element {
+    width: 100%;
+    border: 1px solid rgb(199, 196, 196);
+    padding: 5px 10px;
+    margin: 10px 0px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  &-button {
+    display: flex;
+    justify-content: space-between;
+    &-open {
+      background-image: linear-gradient(
+        -225deg,
+        #473b7b 0%,
+        #3584a7 51%,
+        #30d2be 100%
+      ) !important;
+    }
+    &-copy {
+      background-image: linear-gradient(
+        135deg,
+        #667eea 0%,
+        #764ba2 100%
+      ) !important;
+    }
+  }
+  &-heading {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+}
+@media (max-width: 720px) {
+  .link-card-container {
+    width: 90%;
+  }
+}

@@ -1,0 +1,48 @@
+.withdraw-container {
+  background-color: white;
+  color: black;
+  margin: 50px auto;
+  width: 50%;
+  border-radius: 3px;
+  header {
+    display: inline-block;
+    padding: 11px 20px;
+    vertical-align: middle;
+    line-height: 17px;
+    font-size: 18px;
+    color: #119cbb;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  &-body-card {
+    border: 1px solid black;
+    padding: 1.5rem;
+    &-label {
+      text-align: right;
+      font-weight: 400;
+      font-size: 13px;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  &-button {
+    display: flex;
+    justify-content: center;
+    button {
+      background-color: #3f51b5;
+    }
+  }
+}
+
+@media (max-width: "750px") {
+  .withdraw-container {
+    width: 75%;
+  }
+}
+@media (max-width: "550px") {
+  .withdraw-container {
+    width: 95%;
+  }
+}

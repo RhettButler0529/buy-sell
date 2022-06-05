@@ -1,0 +1,36 @@
+.table-block-container {
+  background-color: white;
+  color: black;
+  margin: 50px auto;
+  width: 70%;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  header {
+    display: inline-block;
+    padding: 11px 20px;
+    vertical-align: middle;
+    line-height: 17px;
+    font-size: 18px;
+    color: #119cbb;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(95, 95, 95);
+  }
+  .block-body {
+    border: 1px solid rgb(194, 192, 192);
+    margin: 1.5rem;
+  }
+}
+
+@media (max-width: "750px") {
+  .table-block-container {
+    width: 75%;
+  }
+}
+@media (max-width: "550px") {
+  .table-block-container {
+    width: 95%;
+  }
+}
